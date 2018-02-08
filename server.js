@@ -43,7 +43,7 @@ app.get("/scrape", function (req, res) {
 		$("h3.title").each(function (i, element) {
 			var result = {};
 
-			// Add the text and href of every link... prepending https: to links due to their funky linking strategy
+			// Add the text and href of every link... prepending https: to links due to site's funky linking strategy
 			result.title = $(this)
 				.text();
 			result.link = "https:" + $(this)

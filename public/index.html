@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>My News Scraper</title>
 </head>
 <body>
-    <h1 id="page-header">Dallas / Fort Worth News Scraper</h1>
-    <h2>Cause that's where I am moving to once I graduate coding bootcamp!</h2>
-    <button type="button" class="btn btn-raised btn-success btn-lg">Refresh Articles (i.e. scrape)</button>
+    <h1 class="display-2 text-center">Metroplex News Scraper</h1>
+    <h2 class="display-4 text-center">Cause I'm moving to DFW following graduation from coding bootcamp!</h2>
+    <div id="button"><button type="button" class="display-4 btn btn-raised btn-success btn-lg" onclick="window.location.href='/scrape'">Scrape Articles</button></div>
+    <hr>
     <div id="wrapper">
-        <div id="articles"></div>
-        <hr>
-        <div id="notes"></div>
+    <div class="row">
+        <div class="col-sm-7">
+            <div id="articles"></div>
+        </div>
+        <div class="col-sm-5">
+            <div id="notes"></div>
+        </div>
+    </div>
     </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="app.js"></script>

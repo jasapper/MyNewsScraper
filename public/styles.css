@@ -1,5 +1,5 @@
 body { 
-    color: #b2aeae;
+    color: whitesmoke;
     background-color: rgb(66, 65, 68) 
     }
     
@@ -7,8 +7,8 @@ body {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:30px;
-    padding-top: 5%;
+    margin-bottom: 20px;
+
 }
 
 #articles {
@@ -22,20 +22,12 @@ body {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-#header{
-    margin-top:50px;
-}
-.navbar{
-    overflow: hidden;
-    position: absolute; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    margin-right: 5px;
 }
 
 textarea, input {
     display: block;
-    width: 100%;
+    width: 90%;
     background-color: rgb(247, 247, 247);
 }
 
@@ -47,4 +39,10 @@ input {
 textarea {
     height: 200px;
     font-size: 18px;
+}
+
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
